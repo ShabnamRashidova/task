@@ -1,0 +1,170 @@
+@media (max-width: 1200px) {
+  .general-header .main-header .nav-list .nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 998px) {
+  :root {
+    --font-size-section-title: 25px;
+    --font-size-page-title: 30px;
+    --font-size-page-paragraph: 15px;
+    --font-size-about-info-title: 20px;
+  }
+  .general-header .header-mobile-container.show {
+    display: block;
+  }
+  .main .banner-section {
+    height: 90vh;
+  }
+  .main .banner-section .home-content {
+    height: 90vh;
+  }
+  .banner-section .search-content-box .search-form select,
+  input,
+  button {
+    height: 52px;
+  }
+  .banner-section .search-content-box .search-form .select-selected {
+    width: 230px;
+  }
+  .banner-section .search-content-box .search-form input {
+    width: 140px;
+  }
+  .banner-section .search-content-box .search-form button {
+    width: 140px;
+  }
+  .vacancy-section .inner-box .content a {
+    padding: 5px 15px !important;
+    font-size: 14px;
+  }
+  .vacancy-section .inner-box .content .content-title,
+  .company,
+  .city {
+    font-size: 14px;
+  }
+  .vacancy-section .inner-box .image img {
+    width: 240px;
+  }
+  .general-footer .footer-logo,
+  .general-footer .footer-social-list {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --font-size-page-title: 25px;
+  }
+  .banner-section .search-content-box .search-form {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .banner-section .search-content-box .search-form .select-selected {
+    width: 500px;
+    border-radius: 0;
+    border-top: 1px solid #BFBFBF;
+  }
+  .banner-section .search-content-box .search-form input {
+    border-radius: 0;
+    width: 500px;
+  }
+  .banner-section .search-content-box .search-form button {
+    width: 500px;
+    border-radius: 0;
+  }
+  .blog-section .inner-box {
+    width: 250px;
+  }
+  .blog-section .inner-box .image-content img {
+    width: 250px;
+  }
+  .general-footer {
+    text-align: center;
+  }
+  .general-footer .footer-logo img {
+    width: 180px;
+  }
+  .general-footer .footer-logo,
+  .general-footer .footer-social-list {
+    text-align: center;
+    justify-content: center;
+  }
+  .general-footer .footer-social-list li a,
+  .general-footer .footer-nav-list li a {
+    font-size: 14px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .about-section .about-image {
+    width: 100%;
+    text-align: center;
+  }
+  .about-section .about-image img {
+    width: 400px;
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .info-section .content {
+    padding: 20px 30px;
+  }
+  .form-section .input-group input.text {
+    width: 270px;
+  }
+  .section-info-2 .content img {
+    width: 20px;
+  }
+  .section-info-2 .content h6,
+  span {
+    font-size: 14px;
+  }
+  .form-section .heading {
+    font-size: 20px;
+  }
+ 
+}
+@media (max-width: 576px) {
+  .sub-title {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-title h5::after {
+    width: 100%;
+  }
+  .page-link {
+    font-size: 15px;
+    padding: 8 15px;
+  }
+  .vacancy-section .inner-box .content a {
+    padding: 5px 5px !important;
+    font-size: 12px;
+  }
+  .banner-section .search-content-box .search-form .select-selected {
+    width: 340px;
+  }
+  .banner-section .search-content-box .search-form input {
+    width: 340px;
+  }
+  .banner-section .search-content-box .search-form button {
+    width: 340px;
+  }
+  .blog-section .inner-box {
+    width: 340px;
+    margin: 0 auto 50px;
+  }
+  .blog-section .inner-box .image-content img {
+    width: 350px;
+  }
+  .program-section .search-form input {
+    width: 280px;
+    margin: 20px auto;
+  }
+
+  .about-section .about-image img {
+    width: 300px;
+  }
+  .program-section .nav-item .nav-link {
+    font-size: 15px;
+  }
+ 
+}
