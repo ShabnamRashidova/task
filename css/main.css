@@ -471,6 +471,10 @@ top: 30px;
   display: flex;
   padding-right: 15px;
   justify-content: space-between;
+
+}
+.banner-section .select-items {
+  box-shadow: var(--primary-box-shadow);
 }
 .banner-section .select-items div,
 .banner-section .select-selected {
@@ -478,6 +482,7 @@ top: 30px;
   cursor: pointer;
   padding: 15px;
   font-size: 15px;
+  
 }
 .banner-section .select-items {
   position: absolute;
@@ -517,7 +522,7 @@ top: 30px;
 .main .banner-section {
   background: url("../images/home/bg.png");
   background-size: cover;
-  min-height: 65vh;
+  min-height: 80vh;
   position: relative;
   z-index: 1;
 }
