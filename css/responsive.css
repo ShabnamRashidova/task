@@ -17,9 +17,6 @@
     --font-size-page-paragraph: 15px;
     --font-size-about-info-title: 20px;
   }
-  .general-header .main-header .nav-list .nav-link {
-    font-size: 13.5px;
-  }
   .general-header .header-logo img {
     width: 170px;
   }
@@ -83,7 +80,7 @@
     --font-size-page-title: 25px;
   }
   .general-header {
-    background-color: #24324af5;
+    background-color: var(--dark-bg-color) ;
   }
   .general-header .header-contact-list {
     display: flex;
@@ -91,6 +88,10 @@
   }
   .general-header .header-contact-list button {
     display: none;
+  }
+  .header-mobile .modal-btn{
+    margin: 0 auto;
+    width: 130px;
   }
   .general-header .header-contact-list li:first-child a i {
     font-size: 22px;
@@ -144,8 +145,8 @@
     margin: 20px 0;
     display: inline-block;
   }
-  .info-section .content {
-    padding: 20px 30px;
+  .form-container .content .title {
+    font-size: 28px;
   }
   .form-section .input-group input.text {
     width: 270px;
@@ -218,6 +219,19 @@
   .about-section .about-image img {
     width: 300px;
   }
+  .form-container .content .title {
+    font-size: 24px;
+  }
+  
+.form-container .form-content .title {
+ font-size: 18px;
+}
+.form-container .form-content .heading {
+ font-size: 15px !important;
+}
+.form-container .form-content h6 {
+ font-size: 15px !important;
+}
   .program-section .nav-item .nav-link {
     font-size: 15px;
   }

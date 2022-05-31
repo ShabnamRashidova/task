@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <main class="main">
+    <main class="main form_page">
      <!-- banner start -->
      <section class="banner-section">
         <div class="container">
@@ -36,57 +36,47 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- banner end -->
-        <section class="form-section">
-            <div class="container">
-                <form action="">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <h6 class="heading">Təcrübə və Təqaüd proqramları</h6>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-title">Şəxsi məlumatlarınız</div>
-                        <div class="input-group input-group-2 ">
-                           
-                            <div class="title">Ad ,Soyad ,Ata adınız <span class="text-danger">*</span></div>
-                           <input type="text" class="text" placeholder="Cavabınız" required>
-                       </div>
-                    </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">Doğum yeri və tarixi <span class="text-danger">*</span></div>
-                               <input type="text" class="text" placeholder="Cavabınız" required>
-                           </div>
+     </section>
+        <div class="form-container">
+            <form action="">
+                <div class="form-content">
+                    <div class="title">Təcrübə və Təqaüd proqramları</div>
+                    <div class="list">
+                        <div class="list_item">
+                            <div class="heading">Şəxsi məlumatlarınız</div>
+                            <div class="item-content">
+                                <h6 class="mb-3">Ad ,Soyad ,Ata adınız <span class="text-danger">*</span></h6>
+                                <input type="text" class="input_1" placeholder="Cavabınız" required>
+                            </div>
+                          
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">Faktiki yaşayış ünvanı<span class="text-danger">*</span></div>
-                               <input type="text" class="text" placeholder="Cavabınız" required>
-                           </div>
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3">Doğum yeri və tarixi <span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">Vətəndaşlığı<span class="text-danger">*</span></div>
-                               <input type="text" class="text" placeholder="Cavabınız" required>
-                           </div>
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3">Faktiki yaşayış ünvanı <span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">İddia olunan vəzifə<span class="text-danger">*</span></div>
-                               <input type="text" class="text" placeholder="Cavabınız" required>
-                           </div>
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3">Vətəndaşlığı<span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <div class="inner-box">
-                                <div class="title mb-2">Ailə vəziyyəti</div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Subay
-                                    </label>
-                                </div>
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3">İddia olunan vəzifə<span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
+                            </div>
+                        </div>
+                        <div class="list_item">
+                            <div class="item-content">
+                                <h6>Ailə vəziyyəti <span class="text-danger">*</span></h6>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
                                         id="flexRadioDefault1">
@@ -94,53 +84,65 @@
                                         Evli
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Subay
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">Hərbi mükəlləfiyyəti<span
-                                        class="text-danger">*</span></div>
-                                <input type="text" class="text" placeholder="Cavabınız">
+                        <div class="list_item">
+                            <div class="item-content">
+                                <h6>Hərbi mükəlləfiyyəti <span class="text-danger">*</span></h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Var
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Yoxdur
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">Ş/Vəsiqəsinin seriya və nömrəsi,tarixi<span
-                                        class="text-danger">*</span></div>
-                                <input type="text" class="text" placeholder="Cavabınız" required>
+                      
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3"> Ş /Vəsiqəsinin seriya və nömrəsi<span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">Telefonlar<span
-                                        class="text-danger">*</span></div>
-                                <input type="text" class="text" placeholder="Cavabınız" required>
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3">Telefonlar<span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <div class="title">E-poçt ünvanınız<span
-                                        class="text-danger">*</span></div>
-                                <input type="email" class="text" placeholder="Cavabınız" required>
+                        <div class="list_item">
+                            <div class="item-content">
+                                    <h6 class="mb-3">E-poçt ünvanınız<span class="text-danger">*</span></h6>
+                                   <input type="text" class="input_1" placeholder="Cavabınız" required>
                             </div>
                         </div>
-                        
-                        <div class="col-10">
-                            <div class="pagination">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item me-4"><a class="page-link" href="./form1.html">Geri</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="./form3.html">Növbəti</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- home end -->
+                <div class="pagination">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination mt-3">
+                          <li class="page-item me-3"><a class="page-link" href="./form1.html">Geri</a></li> 
+                          <li class="page-item"><a class="page-link" href="./form3.html">Növbəti</a></li> 
+                        </ul>
+                      </nav>
+                </div>
+            </form>
+        </div>
     </main>
     <footer class="general-footer">
         <div class="container">
