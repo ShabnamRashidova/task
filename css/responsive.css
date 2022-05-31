@@ -2,6 +2,13 @@
   .general-header .main-header .nav-list .nav-link {
     font-size: 15px;
   }
+  .general-header .header-logo img {
+    width: 200px;
+  }
+  .features-section .inner-box .content h5,
+  .features-section .inner-box .content h5 a {
+    font-size: 16px;
+  }
 }
 @media (max-width: 998px) {
   :root {
@@ -10,8 +17,17 @@
     --font-size-page-paragraph: 15px;
     --font-size-about-info-title: 20px;
   }
-  .general-header .header-mobile-container.show {
-    display: block;
+  .general-header .main-header .nav-list .nav-link {
+    font-size: 13.5px;
+  }
+  .general-header .header-logo img {
+    width: 170px;
+  }
+  .general-header .header-contact-list button {
+    width: 110px;
+    margin: 5px 0 0;
+    font-size: 14px;
+    height: 35px;
   }
   .main .banner-section {
     height: 90vh;
@@ -33,6 +49,10 @@
   .banner-section .search-content-box .search-form button {
     width: 140px;
   }
+  .features-section .inner-box .content h5,
+  .features-section .inner-box .content h5 a {
+    font-size: 18px;
+  }
   .vacancy-section .inner-box .content a {
     padding: 5px 15px !important;
     font-size: 14px;
@@ -45,6 +65,13 @@
   .vacancy-section .inner-box .image img {
     width: 240px;
   }
+  .process-section-content {
+    box-shadow: none;
+  }
+  .process-section .section-box {
+    box-shadow: var(--primary-box-shadow);
+    border-radius: 5px;
+  }
   .general-footer .footer-logo,
   .general-footer .footer-social-list {
     text-align: left;
@@ -55,6 +82,25 @@
   :root {
     --font-size-page-title: 25px;
   }
+  .general-header {
+    background-color: #24324af5;
+  }
+  .general-header .header-contact-list {
+    display: flex;
+    align-items: end;
+  }
+  .general-header .header-contact-list button {
+    display: none;
+  }
+  .general-header .header-contact-list li:first-child a i {
+    font-size: 22px;
+  }
+  .general-header .header-contact-list li:first-child a span {
+    display: none;
+  }
+  .general-header .header-mobile.show {
+    display: block;
+  }
   .banner-section .search-content-box .search-form {
     flex-direction: column;
     margin-top: 60px;
@@ -62,7 +108,7 @@
   .banner-section .search-content-box .search-form .select-selected {
     width: 500px;
     border-radius: 0;
-    border-top: 1px solid #BFBFBF;
+    border-top: 1px solid #bfbfbf;
   }
   .banner-section .search-content-box .search-form input {
     border-radius: 0;
@@ -78,17 +124,10 @@
   .blog-section .inner-box .image-content img {
     width: 250px;
   }
-  .general-footer {
-    text-align: center;
-  }
   .general-footer .footer-logo img {
     width: 180px;
   }
-  .general-footer .footer-logo,
-  .general-footer .footer-social-list {
-    text-align: center;
-    justify-content: center;
-  }
+
   .general-footer .footer-social-list li a,
   .general-footer .footer-nav-list li a {
     font-size: 14px;
@@ -124,6 +163,14 @@
  
 }
 @media (max-width: 576px) {
+  .general-header .header-contact-list button {
+    width: 110px;
+    height: 33px;
+    font-size: 13px;
+  }
+  .general-header .header-logo img {
+    width: 160px;
+  }
   .sub-title {
     display: flex;
     justify-content: center;
@@ -136,8 +183,8 @@
     padding: 8 15px;
   }
   .vacancy-section .inner-box .content a {
-    padding: 5px 5px !important;
-    font-size: 12px;
+    padding: 5px 10px !important;
+    font-size: 13px;
   }
   .banner-section .search-content-box .search-form .select-selected {
     width: 340px;
@@ -155,6 +202,14 @@
   .blog-section .inner-box .image-content img {
     width: 350px;
   }
+  .general-footer {
+    text-align: center;
+  } 
+  .general-footer .footer-logo,
+  .general-footer .footer-social-list {
+    text-align: center;
+    justify-content: center;
+  }
   .program-section .search-form input {
     width: 280px;
     margin: 20px auto;
@@ -166,5 +221,4 @@
   .program-section .nav-item .nav-link {
     font-size: 15px;
   }
- 
 }

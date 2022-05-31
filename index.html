@@ -25,23 +25,31 @@
 <body>
     <!-- header start-->
     <header class="general-header">
-        <div class="container">
+        <div class="container-fluid px-3">
             <div class="main-header">
                 <div class="row align-items-center">
-                    <div class="col-xl-3 col-lg-3 col-6">
+                    <div class="col-3 d-md-none">
+                        <button class="nav-menu-btn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </button>
+                    </div>
+                    <div class="col-md-3 col-6 d-flex justify-content-center">
                         <a href="./index.html" class="header-logo">
                             <img src="./images/logo/page-logo.png" alt="header_logo"></a>
                     </div>
-                    <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+
+                    <div class="col-md-7 d-none d-md-block">
                         <nav class="nav-menu">
-                            <ul class="nav-list d-flex justify-content-between">
+                            <ul class="nav-list d-flex justify-content-between align-items-end">
                                 <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
-                                <li class="nav-item dropdown-item"><a href="" class="nav-link dropdown-link">Proqramlar
-                                        <i class="drop-btn fa-solid fa-chevron-down"></i></a>
-                                    <ul class="submenu shadow">
-                                        <li><a href="./program1.html">Təcrübə proqramları</a></li>
-                                        <li><a href="./program2.html">Təqaüd proqramları</a></li>
-                                    </ul>
+                                <li class="nav-item dropdown">
+                                    <a href="./programs.html" class="nav-link dropbtn">Proqramlar</a>
+                                    <div class="dropdown-content">
+                                        <a href="./program1.html">Təcrübə proqramları</a>
+                                        <a href="./program2.html">Təqaüd proqramları</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
                                 <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
@@ -49,52 +57,38 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                    <div class="col-xl-2 col-md-2 col-3">
                         <ul class="header-contact-list">
-                            <li><a href="#"><i class="fas fa-phone"></i>*5250</a></li>
-                            <li> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li><a href="tel:5250"><i class="fas fa-phone"></i><span>*5250</span></a></li>
+                            <li> <button type="button" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Tərəfdaş ol
                                 </button></li>
                         </ul>
                     </div>
-
-                    <div class="col-6 d-lg-none d-flex justify-content-end">
-                        <button class="nav-menu-btn">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-                    </div>
                 </div>
             </div>
             <!-- header mobile -->
-            <div class="header-mobile-container">
-                <div class="header-mobile">
-                    <div class="header-mobile-top">
-                        <a href="./index.html" class="header-mobile-logo">
-                            <img src="./images/logo/page-logo.png" alt="logo">
-                        </a>
-                        <button class="header-mobile-hide-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <nav class="nav-menu">
-                        <ul class="nav-list">
-                            <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
-                            <li class="nav-item dropdown-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="" class="nav-link dropdown-link">Proqramlar</a>
-                                    <i class="drop-btn fa-solid fa-chevron-down"></i>
-                                </div>
-                                <ul class="submenu d-none">
-                                    <li><a href="./program1.html">Təcrübə proqramları</a></li>
-                                    <li><a href="./program2.html">Təqaüd proqramları</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
-                            <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
-                            <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="header-mobile">
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
+                        <li class="nav-item dropdown-item">
+                            <a href="#"
+                                class=" ms-2 nav-link dropdown-link d-flex justify-content-center align-items-center">Proqramlar
+                                <i class="drop-btn fa-solid fa-chevron-down ms-3"></i></a>
+                            <ul class="submenu d-none">
+                                <li><a href="./program1.html">Təcrübə proqramları</a></li>
+                                <li><a href="./program2.html">Təqaüd proqramları</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
+                        <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><button class="modal-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Tərəfdaş ol
+                        </button></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -540,8 +534,8 @@
         <section class="process-section">
             <div class="container">
                 <div class="process-section-content">
-                    <div class="row ">
-                        <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-3">
                             <div class="section-box">
                                 <div class="image-container">
                                     <img src="./images/home/Group 564.png" class="img-fluid" alt="img">
@@ -552,7 +546,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-3">
                             <div class="section-box">
                                 <div class="image-container">
                                     <img src="./images/home/Group 565.png" class="img-fluid" alt="img">
@@ -563,7 +557,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-3">
                             <div class="section-box">
                                 <div class="image-container">
                                     <img src="./images/home/Group 567.png" class="img-fluid" alt="img">
@@ -574,7 +568,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-3">
                             <div class="section-box">
                                 <div class="image-container">
                                     <img src="./images/home/Group 568.png" class="img-fluid" alt="img">
@@ -591,29 +585,29 @@
             </div>
         </section>
         <!-- process-section end -->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
     <footer class="general-footer">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-4 col-md-6 mb-3">
+                <div class="col-lg-4 col-sm-6 mb-3">
                     <div class="footer-logo">
                         <a href="" class="logo"><img src="./images/logo/page-logo.png" alt="footer_logo"></a>
                     </div>
@@ -625,17 +619,17 @@
                         <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-3">
-                    <div class="footer-sub-title">Menyular</div>
+                <div class="col-lg-2 col-sm-6 mb-3">
+                    <div class="footer-sub-title" >Menyular</div>
                     <ul class="footer-nav-list">
                         <li><a href="./about.html">Haqqımızda</a></li>
-                        <li><a href="">Proqramlar</a></li>
+                        <li><a href="./programs.html">Proqramlar</a></li>
                         <li><a href="./partners.html">Tərəfdaşlar</a></li>
                         <li><a href="./blog.html">Xəbərlər</a></li>
                         <li><a href="./contact.html">Əlaqə</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-3">
+                <div class="col-lg-2 col-sm-6 mb-3">
                     <div class="footer-sub-title">Faydalı linklər</div>
                     <ul class="footer-nav-list">
                         <li><a href="">Tez-tez soruşulanlar</a></li>
@@ -643,13 +637,14 @@
                         <li><a href="">Xidmət şəbəkəsi</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-3">
-                    <div class="footer-sub-title">FAQ</div>
+                <div class="col-lg-2 col-sm-6 mb-3">
+                    <div class="footer-sub-title" >FAQ  </div>
                     <ul class="footer-nav-list">
                         <li><a href="">Təhlükəsizlik</a></li>
                         <li><a href="">Şərtlər və qaydalar</a></li>
                     </ul>
                 </div>
+                
             </div>
         </div>
         <div class="copyright border-top">

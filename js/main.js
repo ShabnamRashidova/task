@@ -84,8 +84,9 @@ $(window).scroll(() => {
     ? $(".general-header").addClass("header-fixed")
     : $(".general-header").removeClass("header-fixed");
 });
-$(".nav-menu-btn i").on("click", () => {
-  $(".header-mobile-container").addClass("show");
+$(".nav-menu-btn").on("click", () => {
+  $(".header-mobile").toggleClass("show");
+  $(".nav-menu-btn").toggleClass("is-active");
 });
 $(".header-mobile-hide-btn i").on("click", () => {
   $(".header-mobile-container").removeClass("show");
