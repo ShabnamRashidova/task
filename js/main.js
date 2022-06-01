@@ -63,22 +63,7 @@ $(".vacancy-carousel").owlCarousel({
     },
   },
 });
-$(".count").each(function () {
-  $(this)
-    .prop("Counter", 0)
-    .animate(
-      {
-        Counter: $(this).text(),
-      },
-      {
-        duration: 3000,
-        easing: "swing",
-        step: function (now) {
-          $(this).text(Math.ceil(now));
-        },
-      }
-    );
-});
+  
 $(window).scroll(() => {
   $(this).scrollTop() >= 120
     ? $(".general-header").addClass("header-fixed")
@@ -163,3 +148,9 @@ function closeAllSelect(elmnt) {
   }
 }
 document.addEventListener("click", closeAllSelect);
+
+$('.counter').counterUp();
+$('.counter').counterUp({
+  delay: 10,
+  time: 1000
+});

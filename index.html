@@ -8,7 +8,6 @@
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
     <!--owl carousel cdn-->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
@@ -27,8 +26,8 @@
     <header class="general-header">
         <div class="container-fluid px-3">
             <div class="main-header">
-                <div class="row align-items-center">
-                    <div class="col-3 d-md-none">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2  d-lg-none bg-daner">
                         <button class="nav-menu-btn">
                             <div class="line"></div>
                             <div class="line"></div>
@@ -40,9 +39,9 @@
                             <img src="./images/logo/page-logo.png" alt="header_logo"></a>
                     </div>
 
-                    <div class="col-md-7 d-none d-md-block">
+                    <div class="col-md-7 d-none d-lg-block">
                         <nav class="nav-menu">
-                            <ul class="nav-list d-flex justify-content-between align-items-end">
+                            <ul class="nav-list d-flex justify-content-between align-items-end mt-3">
                                 <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
                                 <li class="nav-item dropdown">
                                     <a href="./proqramlar.html" class="nav-link dropbtn">Proqramlar</a>
@@ -56,11 +55,23 @@
                                 <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
                             </ul>
                         </nav>
+
                     </div>
-                    <div class="col-xl-2 col-md-2 col-3">
+                    <div class="col-xl-2 col-md-2 col-3 d-flex align-items-center justify-content-evenly">
+                        <div class="dropdown dropdown-lang align-self-end ">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                AZ
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                                <li><a class="dropdown-item" href="#">RU</a></li>
+                            </ul>
+                        </div>
                         <ul class="header-contact-list">
                             <li><a href="tel:5250"><i class="fas fa-phone"></i><span>*5250</span></a></li>
-                            <li> <button type="button" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li> <button type="button" class="modal-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
                                     Tərəfdaş ol
                                 </button></li>
                         </ul>
@@ -70,6 +81,7 @@
             <!-- header mobile -->
             <div class="header-mobile">
                 <nav class="nav-menu">
+                    
                     <ul class="nav-list">
                         <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
                         <li class="nav-item dropdown-item">
@@ -84,10 +96,21 @@
                         <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
                         <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><button class="modal-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Tərəfdaş ol
-                        </button></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><button class="modal-btn" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Tərəfdaş ol
+                                </button></a></li>
                     </ul>
+                    <div class="dropdown dropdown-lang align-self-end ">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            AZ
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                            <li><a class="dropdown-item" href="#">RU</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -294,7 +317,8 @@
                         <div class="pagination">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
-                                    <li class="page-item me-4"><a class="page-link" href="./proqramlar.html">Bütün təcrübə
+                                    <li class="page-item me-4"><a class="page-link" href="./proqramlar.html">Bütün
+                                            təcrübə
                                             elanları</a>
                                     </li>
 
@@ -404,7 +428,8 @@
                         <div class="pagination">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
-                                    <li class="page-item me-4"><a class="page-link" href="./proqramlar.html">Bütün təcrübə
+                                    <li class="page-item me-4"><a class="page-link" href="./proqramlar.html">Bütün
+                                            təcrübə
                                             elanları</a>
                                     </li>
 
@@ -542,7 +567,7 @@
                                 </div>
                                 <h6 class="title">Partnyorlarımız</h6>
                                 <div class="counter">
-                                    <span class="count">10</span>
+                                    <span class="counter">12</span>
                                 </div>
                             </div>
                         </div>
@@ -575,8 +600,9 @@
                                 </div>
                                 <h6 class="title">Proqramlarımız</h6>
                                 <div class="counter">
-                                    <span class="count">30</span>
+                                    <span class="count">100</span>+
                                 </div>
+
                             </div>
                         </div>
 
@@ -620,7 +646,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-sm-6 mb-3">
-                    <div class="footer-sub-title" >Menyular</div>
+                    <div class="footer-sub-title">Menyular</div>
                     <ul class="footer-nav-list">
                         <li><a href="./about.html">Haqqımızda</a></li>
                         <li><a href="./programs.html">Proqramlar</a></li>
@@ -638,13 +664,13 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-sm-6 mb-3">
-                    <div class="footer-sub-title" >FAQ  </div>
+                    <div class="footer-sub-title">FAQ </div>
                     <ul class="footer-nav-list">
                         <li><a href="">Təhlükəsizlik</a></li>
                         <li><a href="">Şərtlər və qaydalar</a></li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
         <div class="copyright border-top">
@@ -658,12 +684,19 @@
         </div>
     </footer>
     <!-- jquery cdn-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>
