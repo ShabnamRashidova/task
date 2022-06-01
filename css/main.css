@@ -73,6 +73,7 @@ button {
 .sub-title h5 {
   position: relative;
   margin-bottom: 30px;
+  font-size: 22px;
 }
 .sub-title h5::after {
   position: absolute;
@@ -117,11 +118,12 @@ button {
 }
 .page-link:hover {
   background-color: var(--light-bg-color);
+  color: var(--primary-text-color);
 }
 .page-link:focus {
   box-shadow: none;
 }
-/*header start*/
+/******header**********/
 .general-header {
   position: absolute;
   z-index: 2;
@@ -243,8 +245,8 @@ button {
 .general-header .modal-btn {
   background-color: var(--primary-design-color);
   display: block;
-  width: 140px;
-  height: 44px;
+  width: 135px;
+  height: 42px;
   border-radius: 20px;
   text-transform: uppercase;
   color: var(--primary-design-color);
@@ -402,7 +404,7 @@ button {
     -o-transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
-/*banner section*/
+/*******banner section*************/
 .banner-section {
   padding: 0;
   overflow: hidden;
@@ -544,7 +546,7 @@ button {
   background-color: transparent;
   border: none;
 }
-/*features section*/
+/*************features section**************/
 .features-section {
   padding: 50px 0 0;
 }
@@ -626,7 +628,7 @@ button {
 .features-section .inner-box-3::after {
   background-color: rgba(22, 143, 196, 0.7);
 }
-/*vacancy-section*/
+/************vacancy-section*****************/
 .section-one {
   background: url("../images/home/Group\ 527.png");
   background-repeat: no-repeat;
@@ -720,7 +722,7 @@ button {
 .vacancy-section-bg-light {
   background-color: var(--primary-bg-color) !important;
 }
-/*partners*/
+/************partners****************/
 .partners-section-bg {
   background-color: var(--secondary-bg-color);
 }
@@ -747,7 +749,7 @@ button {
 .partners .slide-item img {
   width: 140px;
 }
-/*blog*/
+/**********blog********/
 .blog-section {
   background-color: var(--light-bg-color);
 }
@@ -769,7 +771,7 @@ button {
   color: #24324a;
   transform: translateX(2px);
 }
-/*blog inner section*/
+/********blog inner section*************/
 .blog-inner-section {
   padding: var(--padding-top-bottom);
 }
@@ -784,7 +786,7 @@ button {
 .blog-inner-section .blog-info span {
   font-size: 14px;
 }
-/*process section*/
+/***************process section**********/
 .process-section-content {
   border-radius: 10px;
   border-radius: 10px;
@@ -894,7 +896,7 @@ button {
   padding: 10px;
   font-size: 15px;
 }
-/*about*/
+/**********about***************/
 .about-section .about-info .about-info-title {
   color: var(--primary-design-color);
   position: relative;
@@ -966,7 +968,7 @@ button {
   height: 400px !important;
 }
 
-/*************************************FORM******************************/
+/**FORM**/
 .form_page{
   background-color:var(--secondary-bg-color);
 }
@@ -976,6 +978,7 @@ button {
   width: 800px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .form-container .content {
   background: transparent;
@@ -995,7 +998,6 @@ button {
   color: var(--primary-text-color);
   line-height: 135%;
 }
-
 .form-container .form-content .title {
   font-size: 27px;
   padding: 13px 0;
@@ -1063,97 +1065,76 @@ button {
   padding-left: 17px;
   white-space: pre-wrap;
 }
-/*form section*/
-
-/* .form-section .form-title {
-  background-color: var(--primary-design-color);
+.section_container{
+  overflow: hidden;
+}
+.categories{
+  background-color: var(--secondary-bg-color);
   padding: 20px;
-  margin-top: 50px;
-  color: var(--primary-bg-color);
-  border-radius: 10px 10px 0 0;
+  margin: 20px 0;
+  overflow: hidden;
 }
-.form-section .input-group-2 {
-  border-radius: 0 0 10px 10px !important;
+.categories span{
+ display: inline-block;
+ margin-bottom: 10px;
 }
-.form-section .heading {
-  font-size: 26px;
-  font-weight: 500;
-  text-align: center;
-  border-radius: 0 0 10px 10px;
-  padding: 20px 30px;
-  box-shadow: var(--primary-box-shadow);
-  color: #000;
-  background-color: var(--primary-bg-color);
+.categories div span{
+color: var(--primary-design-color);
+display: inline-block;
+margin-left: 10px;
 }
-.form-section .section-header ul {
-  margin: 40px 0;
-  box-shadow: var(--primary-box-shadow);
+.categories_2 {
+background-color: var(--light-bg-color);
 }
-.form-section .section-header ul li:first-child {
-  padding: 20px 30px;
-  background-color: var(--primary-design-color);
-  color: var(--primary-bg-color);
-  border-radius: 5px 5px 0 0;
+.categories_2 span img{
+width: 20px;
+display: inline-block;
+margin-right: 10px;
 }
-.form-section .section-header li:last-child {
-  padding: 20px 30px;
-  border-radius: 0 0 5px 5px;
-  background: var(--primary-bg-color);
+ .category-nav-list {
+padding: 0 30px;
 }
-.form-section .inner-box {
-  padding: 30px 45px;
-  border-radius: 10px;
-  box-shadow: var(--primary-box-shadow);
-  background: var(--primary-bg-color);
-  margin-bottom: 40px;
+ .category-nav-list .nav-link{
+color: #000 !important;
+position: relative;
+padding: 10px 0 ;
 }
-.form-section .form-check {
-  margin-bottom: 10px;
+ .category-nav-list .nav-link:last-child{
+margin-left: 20px;
 }
-.form-section .form-check input {
-  box-shadow: none;
+ .category-nav-list .nav-link.active::after{
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 2px;
+width: 50%;
+background-color: var(--primary-design-color);
 }
-.form-section .input-group {
-  padding: 30px;
-  box-shadow: var(--primary-box-shadow);
-  background-color: var(--primary-bg-color);
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.section_container .search-form input{
+  border-radius: 5px 0 0 5px;
+  border-right: none !important;
+  box-shadow: none !important;
+  font-size: 14px;
+  padding:6px 10px;
 }
-.form-section .input-group input.text {
-  width: 600px;
-  border-bottom: 1px solid #cbcbcb;
-  padding-bottom: 10px;
-  margin-top: 20px;
-}
-.form-section h6 {
-  background-color: var(--primary-design-color);
-  padding: 20px 30px;
-  border-radius: 10px 10px 0 0;
-  color: var(--primary-bg-color);
-  margin-bottom: 0;
-}
-.form-section .col-1 .input-group {
-  border-radius: 0 0 10px 10px;
-}
-.form-section .link {
+.section_container .search-form button{
+  border-radius: 0 5px 5px 0;
+  box-shadow: none !important;
+  font-size: 14px;
+  background: transparent;
   color: var(--primary-design-color);
-  text-decoration: underline;
-  display: block;
-  padding: 40px 0;
-} */
-/* .section-info-2 .inner-box .image img {
+  border: 1px solid #ddd;
+  border-left: none;
+  padding: 4px 10px 4px 4px;
+}
+.search-form input:focus {
+ border-color: #ddd !important;
+}
+ .section-info-2 .inner-box .image img {
   width: 200px;
 }
-.section-info-2 .category {
-  background-color: var(--secondary-bg-color);
-  padding: 30px 0;
-}
-.section-info-2 .category ul li {
-  margin-bottom: 10px;
-}
+
 .section-info-2 .info {
   overflow: hidden;
   padding: var(--padding-top-bottom);
@@ -1166,76 +1147,3 @@ button {
   color: var(--primary-design-color);
   margin-right: 30px;
 }
-.program-section .search-form form {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.program-section .search-form input {
-  width: 400px;
-  height: 40px;
-  box-shadow: var(--primary-box-shadow);
-  padding: 0 35px 0 10px;
-  border-radius: 3px 0 0 3px;
-  font-size: 14px;
-  background-color: var(--primary-bg-color);
-  border: 1px solid #dbdbdb;
-  color: #434343;
-  margin: 30px 0 30px;
-}
-.program-section .search-form .search-btn {
-  background-color: var(--primary-design-color);
-  color: var(--primary-bg-color);
-  transition: background-color 0.3s ease;
-  height: 40px;
-  line-height: 40px;
-  width: 40px;
-  border-radius: 0 3px 3px 0;
-}
-.program-section .search-form .search-btn:hover {
-  background-color: #24324a;
-}
-.program-section {
-  padding: var(--padding-top-bottom);
-}
-.program-section .category {
-  margin: 20px 0;
-  padding: 20px;
-  background-color: var(--primary-bg-color);
-}
-.program-section .nav-item .nav-link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  display: inline-block;
-  padding: 0;
-  font-size: 18px;
-}
-.program-section .nav-item .nav-link.active {
-  position: relative;
-}
-.program-section .nav-item .nav-link.active::after {
-  position: absolute;
-  content: "";
-  bottom: -3px;
-  left: 0;
-  height: 3px;
-  background-color: var(--primary-design-color);
-  width: 100%;
-}
-.program-section .category-2 {
-  background-color: var(--light-bg-color) !important;
-}
-.program-section .category {
-  background-color: var(--secondary-bg-color);
-  margin: 20px 0;
-}
-.program-section .category ul li {
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-.program-section .category ul li img {
-  width: 20px;
-  display: inline-block;
-  margin-right: 10px;
-} */

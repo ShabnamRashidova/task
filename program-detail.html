@@ -25,23 +25,31 @@
 <body>
     <!-- header start-->
     <header class="general-header">
-        <div class="container">
+        <div class="container-fluid px-3">
             <div class="main-header">
                 <div class="row align-items-center">
-                    <div class="col-xl-3 col-lg-3 col-6">
+                    <div class="col-3 d-md-none">
+                        <button class="nav-menu-btn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </button>
+                    </div>
+                    <div class="col-md-3 col-6 d-flex justify-content-center">
                         <a href="./index.html" class="header-logo">
                             <img src="./images/logo/page-logo.png" alt="header_logo"></a>
                     </div>
-                    <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+
+                    <div class="col-md-7 d-none d-md-block">
                         <nav class="nav-menu">
-                            <ul class="nav-list d-flex justify-content-between">
+                            <ul class="nav-list d-flex justify-content-between align-items-end">
                                 <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
-                                <li class="nav-item dropdown-item"><a href="" class="nav-link dropdown-link">Proqramlar
-                                        <i class="drop-btn fa-solid fa-chevron-down"></i></a>
-                                    <ul class="submenu shadow">
-                                        <li><a href="./program1.html">Təcrübə proqramları</a></li>
-                                        <li><a href="./program2.html">Təqaüd proqramları</a></li>
-                                    </ul>
+                                <li class="nav-item dropdown">
+                                    <a href="./proqramlar.html" class="nav-link dropbtn">Proqramlar</a>
+                                    <div class="dropdown-content">
+                                        <a href="./program1.html">Təcrübə proqramları</a>
+                                        <a href="./program2.html">Təqaüd proqramları</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
                                 <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
@@ -49,73 +57,40 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                    <div class="col-xl-2 col-md-2 col-3">
                         <ul class="header-contact-list">
-                            <li> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li><a href="tel:5250"><i class="fas fa-phone"></i><span>*5250</span></a></li>
+                            <li> <button type="button" class="modal-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
                                     Tərəfdaş ol
                                 </button></li>
-                        
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </ul>
-                    </div>
-
-                    <div class="col-6 d-lg-none d-flex justify-content-end">
-                        <button class="nav-menu-btn">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
                     </div>
                 </div>
             </div>
             <!-- header mobile -->
-            <div class="header-mobile-container">
-                <div class="header-mobile">
-                    <div class="header-mobile-top">
-                        <a href="" class="header-mobile-logo">
-                            <img src="./images/logo/page-logo.png" alt="logo">
-                        </a>
-                        <button class="header-mobile-hide-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <nav class="nav-menu">
-                        <ul class="nav-list">
-                            <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
-                            <li class="nav-item dropdown-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="" class="nav-link dropdown-link">Proqramlar</a>
-                                    <i class="drop-btn fa-solid fa-chevron-down"></i>
-                                </div>
-                                <ul class="submenu d-none">
-                                    <li><a href="#">Təcrübə proqramları</a></li>
-                                    <li><a href="#">Təqaüd proqramları</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
-                            <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
-                            <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="header-mobile">
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
+                        <li class="nav-item dropdown-item">
+                            <a href="#"
+                                class=" ms-2 nav-link dropdown-link d-flex justify-content-center align-items-center">Proqramlar
+                                <i class="drop-btn fa-solid fa-chevron-down ms-3"></i></a>
+                            <ul class="submenu d-none">
+                                <li><a href="./program1.html">Təcrübə proqramları</a></li>
+                                <li><a href="./program2.html">Təqaüd proqramları</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
+                        <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><button class="modal-btn" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Tərəfdaş ol
+                                </button></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -135,10 +110,11 @@
                                     <input type="text" placeholder="Proqram növü">
                                     <div class="custom-select">
                                         <select>
-                                            <option value="">İxtisaslar <i class="fa-solid fa-chevron-down"></i></option>
+                                            <option value="">İxtisaslar <i class="fa-solid fa-chevron-down"></i>
+                                            </option>
                                             <option value="">İxtisaslar</option>
                                             <option value="">İxtisaslar</option>
-                                           
+
                                         </select>
                                     </div>
                                     <div class="custom-select">
@@ -159,10 +135,10 @@
         </section>
         <!-- banner end -->
         <section class="section-info-2">
-            <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                           <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
                             <div class="inner-box d-flex align-items-center mt-3">
                                 <div class="image"><img src="./images/home/category-img4.png" alt="img"></div>
                                 <div class="content ms-3">
@@ -172,31 +148,31 @@
                                     </div>
                                 </div>
                             </div>
-                           </div>
                         </div>
-                        <div class="col-12 ">
-                                <div class="category">
-                                 <div class="container">
-                                        <div class="row">
-                                        <div class="col-lg-6"><ul>
-                                            <li>Şəhər: <span>Bakı</span></li>
-                                            <li>Proqram: <span>Təcrübə</span></li>
-                                            <li>Sahə: <span>Texnologiya(IT)</span></li>
-                                        </ul>
-                                    </div>
-                                       <div class="col-lg-6">
-                                        <ul>
-                                            <li>Kateqoriya: <span>Proqramlaşdırma</span></li>
-                                            <li>Elan tarixi: <span>12.05.2022</span></li>
-                                            <li>Bitmə tarixi: <span>12.06.2022</span></li>
-                                        </ul>
-                                       </div>
-                                    </div>
-                                 </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="categories">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 mb-2  col-sm-6 d-flex flex-column">
+                                    <div>Şəhər: <span>Bakı</span></div>
+                                    <div>Proqram: <span>Təcrübə</span></div>
+                                    <div>Sahə: <span>Texnologiya(IT)</span></div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mb-2  col-sm-6 d-flex flex-column">
+                                    <div>Kateqoriya: <span>Proqramlaşdırma</span></div>
+                                    <div>Elan tarixi: <span>12.05.2022</span></div>
+                                    <div>Bitmə tarixi: <span>12.06.2022</span></div>
+                                </div>
                             </div>
                         </div>
-                      <div class="col-12">
-                       <div class="container">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="container">
                         <div class="info">
                             <div class="sub-title">
                                 <h5>Proqram haqqında məlumat</h5>
@@ -208,12 +184,14 @@
                                 <li>To make monitoring of the compliance of the “Shexs</li>
                             </ul>
                         </div>
-                       </div>
-                      </div>
-                       <div class="col-12">
-                       <div class="container">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="container">
                         <div class="info">
-                            <div class="sub-title"><h5>Namizəd üçün tələblər</h5></div>
+                            <div class="sub-title">
+                                <h5>Namizəd üçün tələblər</h5>
+                            </div>
                             <ul>
                                 <li>Higher education (BA or MSc in Finance is essential);</li>
                                 <li>Internship experience in the field of taxation and accounting will be preferred</li>
@@ -224,21 +202,21 @@
                                 <li>Innovative thinking.</li>
                             </ul>
                         </div>
-                       </div>
-                       </div>
-                    
-                       </div>
                     </div>
-                    </div>
+                </div>
+
+            </div>
+            </div>
+            </div>
         </section>
         <section class="vacancy-section vacancy-section-bg-light py-5">
             <div class="container">
                 <div class="row">
-                   <div class="col-12">
-                    <div class="sub-title">
-                        <h5>Oxşar vakansiyalar</h5>
-                      </div>
-                   </div>
+                    <div class="col-12">
+                        <div class="sub-title">
+                            <h5>Oxşar vakansiyalar</h5>
+                        </div>
+                    </div>
                     <div class="col-lg-12">
                         <div class="owl-carousel vacancy-carousel owl-theme">
                             <div class="slide-item">
@@ -259,8 +237,8 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <a href="./program-detail.html" class="read-more-link">Ətraflı</a>
-                                            <a href="" class="link-2">Müraciət et</a>   
-                                           </div>
+                                            <a href="" class="link-2">Müraciət et</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -282,8 +260,8 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <a href="./program-detail.html" class="read-more-link">Ətraflı</a>
-                                            <a href="" class="link-2">Müraciət et</a>   
-                                           </div>
+                                            <a href="" class="link-2">Müraciət et</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -309,8 +287,8 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <a href="./program-detail.html" class="read-more-link">Ətraflı</a>
-                                            <a href="" class="link-2">Müraciət et</a>   
-                                           </div>
+                                            <a href="" class="link-2">Müraciət et</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -330,36 +308,36 @@
                                                     class="me-1" alt="icon"> Bakı
                                             </div>
                                         </div>
-                                       <div class="d-flex align-items-center">
-                                        <a href="./program-detail.html" class="read-more-link">Ətraflı</a>
-                                        <a href="" class="link-2">Müraciət et</a>   
-                                       </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="./program-detail.html" class="read-more-link">Ətraflı</a>
+                                            <a href="" class="link-2">Müraciət et</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
         </section>
         <!-- Modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </main>
     <footer class="general-footer">
         <div class="container">
@@ -377,7 +355,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-sm-6 mb-3">
-                    <div class="footer-sub-title" >Menyular</div>
+                    <div class="footer-sub-title">Menyular</div>
                     <ul class="footer-nav-list">
                         <li><a href="./about.html">Haqqımızda</a></li>
                         <li><a href="./programs.html">Proqramlar</a></li>
@@ -395,13 +373,13 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-sm-6 mb-3">
-                    <div class="footer-sub-title" >FAQ  </div>
+                    <div class="footer-sub-title">FAQ </div>
                     <ul class="footer-nav-list">
                         <li><a href="">Təhlükəsizlik</a></li>
                         <li><a href="">Şərtlər və qaydalar</a></li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
         <div class="copyright border-top">

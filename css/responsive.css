@@ -74,6 +74,9 @@
     text-align: left;
     justify-content: flex-start;
   }
+  .search-form input ,button{
+   height: 40px;
+  }
 }
 @media (max-width: 768px) {
   :root {
@@ -128,7 +131,6 @@
   .general-footer .footer-logo img {
     width: 180px;
   }
-
   .general-footer .footer-social-list li a,
   .general-footer .footer-nav-list li a {
     font-size: 14px;
@@ -161,7 +163,12 @@
   .form-section .heading {
     font-size: 20px;
   }
- 
+  .section-info-2 .info ul li {
+   font-size: 14px;
+  }
+  .sub-title h5 {
+    font-size: 18px;
+  }
 }
 @media (max-width: 576px) {
   .general-header .header-contact-list button {
@@ -211,11 +218,6 @@
     text-align: center;
     justify-content: center;
   }
-  .program-section .search-form input {
-    width: 280px;
-    margin: 20px auto;
-  }
-
   .about-section .about-image img {
     width: 300px;
   }
@@ -232,7 +234,7 @@
 .form-container .form-content h6 {
  font-size: 15px !important;
 }
-  .program-section .nav-item .nav-link {
-    font-size: 15px;
-  }
+.section-info-2 .inner-box .image img {
+  width: 170px;
+}
 }
