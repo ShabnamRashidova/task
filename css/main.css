@@ -428,16 +428,18 @@ button {
   padding: 0;
   position: relative;
   overflow: hidden;
+  height: 600px;
+
 }
 .banner-section.banner-section-2 {
   height: 70vh;
   padding: 0;
 }
 .banner-section .banner-carousel .slide-item {
-  min-height: 600px;
+  min-height: 550px;
   padding: 0;
   position: relative;
-  background-size: cover;
+  background-size: cover !important;
   background-repeat: no-repeat !important;
   z-index: 1;
 }
@@ -535,11 +537,9 @@ button {
 .banner-section .search-content-box .search-form button:hover {
   background-color: #3a7bca;
 }
-.main .banner-section .page-title-content {
-  top: 45%;
-}
+
 .main .banner-section .search-content-box {
-  top: 65%;
+  top: 50%;
 }
 .home .page-link {
   color: var(--primary-design-color);

@@ -104,19 +104,24 @@
   :root {
     --font-size-page-title: 25px;
   }
+  .banner-section {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+  
+  }
   .banner-section.banner-section-2 {
-    height: 120vh !important;
+    height: 500px !important;
   
   }
   .banner-section .banner-carousel .slide-item {
     min-height: 500px;
   
   }
-  .main .banner-section .page-title-content {
-    top: 13%;
-  }
+  
   .main .banner-section .search-content-box {
-    top: 15%;
+    top: 25%;
   }
   .banner-section .search-content-box {
    top: 25%;
