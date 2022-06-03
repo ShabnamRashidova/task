@@ -117,8 +117,8 @@ button {
   box-shadow: var(--primary-box-shadow);
 }
 .page-link:hover {
-  background-color: var(--light-bg-color);
-  color: var(--primary-text-color);
+  background-color: #3A7BCA;
+  color: var(--white-text-color);
 }
 .page-link:focus {
   box-shadow: none;
@@ -126,7 +126,7 @@ button {
 /******header**********/
 .general-header {
   position: absolute;
-  z-index: 2;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -266,12 +266,11 @@ color: var(--secondary-text-color);
 .general-header .modal-btn {
   background-color: var(--primary-design-color);
   display: block;
-  width: 105px;
-  height: 32px;
+  width: 100px;
+  height: 38px;
   border-radius: 20px;
-  text-transform: uppercase;
   color: var(--primary-design-color);
-  font-size: 14px;
+  font-size: 14.5px;
   letter-spacing: -0.5px;
   transition: var(--general-transition);
   position: relative;
@@ -337,7 +336,6 @@ color: var(--secondary-text-color);
   width: 100%;
   text-align: center;
   display: none;
-  z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,8 +426,11 @@ color: var(--secondary-text-color);
 /*******banner section*************/
 .banner-section {
   padding: 0;
+  position: relative;
   overflow: hidden;
-
+}
+.banner-section.banner-section-2{
+  height:65vh;
 }
 .banner-section .banner-carousel .slide-item {
   height: 90vh;
@@ -447,16 +448,11 @@ color: var(--secondary-text-color);
   opacity: 0.7;
   z-index: -1;
 }
-.banner-section .banner-carousel .item-1 {
-  background: url("../images/home/home-bg.png");
-  background-repeat: no-repeat;
-}
-.banner-section .banner-carousel .item-2 {
-  background: url("../images/home/home-bg.png");
-  background-repeat: no-repeat;
-}
 .banner-section .search-content-box {
-  height: 100vh;
+  position: absolute;
+  top:50%;
+  left:0;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,6 +506,11 @@ color: var(--secondary-text-color);
 .banner-section .select-hide {
   display: none;
 }
+.banner-section .page-title-content{
+   position: absolute;
+ top: 50%;
+  z-index: 20
+}
 .banner-section .search-content-box .search-form input {
   border-radius: 10px 0 0 10px;
   width: 170px;
@@ -532,32 +533,14 @@ color: var(--secondary-text-color);
   background-color: #3a7bca;
 }
 .main .banner-section {
-  background: url("../images/home/bg.png");
-  background-size: cover;
   min-height: 80vh;
-  position: relative;
-  margin-bottom: 0;
-  z-index: 1;
+  position: relative
 }
-.main .banner-section::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  background-color: #04384d;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.main .banner-section .page-title-content{
+top: 45%;
 }
-.main .banner-section .content {
-  height: 60vh;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-}
-.main .banner-section .search-content-box {
-  height: 15vh;
+.main .banner-section .search-content-box{
+top: 65%;
 }
 .home .page-link {
   color: var(--primary-design-color);
@@ -565,6 +548,7 @@ color: var(--secondary-text-color);
   background-color: transparent;
   border: none;
 }
+
 /*************features section**************/
 .features-section {
   padding: 50px 0 0;

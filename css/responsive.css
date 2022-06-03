@@ -7,7 +7,7 @@
   }
   .features-section .inner-box .content h5,
   .features-section .inner-box .content h5 a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 998px) {
@@ -103,6 +103,9 @@
 @media (max-width: 768px) {
   :root {
     --font-size-page-title: 25px;
+  }
+  .banner-section .search-content-box {
+   top: 25%;
   }
   .banner-section .search-content-box .search-form {
     flex-direction: column;

@@ -27,8 +27,8 @@
     <header class="general-header">
         <div class="container-fluid px-3">
             <div class="main-header">
-                <div class="row align-items-center">
-                    <div class="col-3 d-md-none">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2  d-lg-none bg-daner">
                         <button class="nav-menu-btn">
                             <div class="line"></div>
                             <div class="line"></div>
@@ -40,12 +40,12 @@
                             <img src="./images/logo/page-logo.png" alt="header_logo"></a>
                     </div>
 
-                    <div class="col-md-7 d-none d-md-block">
+                    <div class="col-md-7 d-none d-lg-block">
                         <nav class="nav-menu">
-                            <ul class="nav-list d-flex justify-content-between align-items-end">
+                            <ul class="nav-list d-flex justify-content-between align-items-end mt-3">
                                 <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
                                 <li class="nav-item dropdown">
-                                    <a href="./proqramlar.html" class="nav-link dropbtn">Proqramlar</a>
+                                    <a href="#" class="nav-link dropbtn">Proqramlar</a>
                                     <div class="dropdown-content">
                                         <a href="./program1.html">Təcrübə proqramları</a>
                                         <a href="./program2.html">Təqaüd proqramları</a>
@@ -56,11 +56,23 @@
                                 <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
                             </ul>
                         </nav>
+
                     </div>
-                    <div class="col-xl-2 col-md-2 col-3">
+                    <div class="col-xl-2 col-md-2 col-3 d-flex align-items-center justify-content-evenly">
+                        <div class="dropdown dropdown-lang align-self-end ">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                AZ
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                                <li><a class="dropdown-item" href="#">RU</a></li>
+                            </ul>
+                        </div>
                         <ul class="header-contact-list">
                             <li><a href="tel:5250"><i class="fas fa-phone"></i><span>*5250</span></a></li>
-                            <li> <button type="button" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <li> <button type="button" class="modal-btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
                                     Tərəfdaş ol
                                 </button></li>
                         </ul>
@@ -70,6 +82,7 @@
             <!-- header mobile -->
             <div class="header-mobile">
                 <nav class="nav-menu">
+                    
                     <ul class="nav-list">
                         <li class="nav-item"><a href="./about.html" class="nav-link">Haqqımızda</a></li>
                         <li class="nav-item dropdown-item">
@@ -84,51 +97,42 @@
                         <li class="nav-item"><a href="./partners.html" class="nav-link">Tərəfdaşlar</a></li>
                         <li class="nav-item"><a href="./blog.html" class="nav-link">Xəbərlər</a></li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Əlaqə</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><button class="modal-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Tərəfdaş ol
-                        </button></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><button class="modal-btn" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Tərəfdaş ol
+                                </button></a></li>
                     </ul>
+                    <div class="dropdown dropdown-lang align-self-end ">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            AZ
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                            <li><a class="dropdown-item" href="#">RU</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
     <!-- header end -->
-    <main class="main">
-         <!-- banner start -->
-         <section class="banner-section">
-            <div class="container">
-                <div class="content">
-                    <div class="row align-items-center justify-content-center ">
-                        <div class="col-12 my-5">
-                            <h1 class="page-title text-center">Haqqımızda</h1>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="search-content-box">
-                                <form action="" class="search-form">
-                                    <input type="text" placeholder="Proqram növü">
-                                    <div class="custom-select">
-                                        <select>
-                                            <option value="">İxtisaslar <i class="fa-solid fa-chevron-down"></i></option>
-                                            <option value="">İxtisaslar</option>
-                                            <option value="">İxtisaslar</option>
-                                          
-                                        </select>
-                                    </div>
-                                    <div class="custom-select">
-                                        <select>
-                                            <option value="">İnfoqrafik kateqoriyalar</option>
-                                            <option value="">İnfoqrafik kateqoriyalar</option>
-                                            
-                                        </select>
-                                    </div>
-                                    <button type="submit">Axtar <i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    <main>
+         <!-- banner start-->
+         <section class="banner-section banner-section-2">
+            <div class="row">
+                <div class="banner-carousel owl-carousel owl-theme">
+                    <div class="slide-item item-1" style="background: url('/images/home/bg.png');"></div>
+                    <div class="slide-item item-2" style="background: url('/images/home/bg.png');"></div>
                 </div>
-            </div>
-        </section>
+                <div class="col-12 d-flex justify-content-center">
+                   <div class="page-title-content">
+                    <h1 class="page-title text-center">haqqımızda</h1>
+                   </div>
+                </div>
+                </div>
+                </section>
+
         <!-- banner end -->
         <section class="about-section">
             <div class="container">
